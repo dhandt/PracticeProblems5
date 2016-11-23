@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script type="text/javascript" src="dhandtPracticeProblems.js"></script>
+  <body>
+    <script type="text/javascript">
+      var num1 = Number(prompt("Enter number 1."))
+      var num2 = Number(prompt("Enter number 2."))
+      
+      document.write("num1 =" + num1 + ", num2 = " + num2);
+      
+      document.write("<br>");
+      document.write("num1 & num2 = " + bitwiseAnd(num1, num2));
+      document.write("<br>");
+      
+      document.write("<br>");
+      document.write("num1 | num2 = " + bitwiseOr(num1, num2));
+      document.write("<br>");
+      
+      document.write("<br>");
+      document.write("num1 ^ num2 = " + bitwiseXor(num1, num2));
+      document.write("<br>");
+      
+      document.write("<br>");
+      document.write("num1 << num2 = " + bitwiseLeftShift(num1, num2));
+      document.write("<br>");
+
+      document.write("<br>");
+      document.write("num1 >> num2 = " + bitwiseRightShift(num1, num2));
+      document.write("<br>");
+                        
+      var string1 = prompt("enter a string.");
+      var string2 = prompt("enter another string.");
+     
+      document.write("<br>");
+      document.write(removeSubstring(string1, string2));
+      document.write("<br>");
+      
+      var numRepeat = Number(prompt("How many times to repeat?"));     
+      
+      document.write("<br>");
+      document.write(awesomeRepeat(numRepeat));
+      document.write("<br>");
+      
+      var word1 = prompt("Enter a possible palindrome.")
+      var word2 = isItPal(word1)
+      
+      if(word1 === word2)
+      {
+        document.write("<br>");
+        document.write("This word is a palindrome.");
+        document.write("<br>");
+      }
+    
+      else
+      {
+        document.write("<br>");
+        document.write("This word is not a palindrome.");
+        document.write("<br>");
+      }
+      
+      
+      var num1 = prompt("Enter a number");
+      var num2 = prompt("Enter another number");
+      var num3 = prompt("Enter a final number");
+      var points = [num1, num2, num3];
+      
+      document.write("<br>");
+      document.write(numSort(points));
+      document.write("<br>");
+   
+      
+      var percent = Number(prompt("Enter your grade"))
+      var grade = grades(percent)
+    
+      document.write("<br>");
+      document.write(grade)
+      document.write("<br>");      
+    </script>
+  </body>
+</html>
